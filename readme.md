@@ -22,7 +22,9 @@ make
 
 On ubuntu install the required development dependencies
 
+```bash
     sudo apt install libgtkmm-3.0-dev
+```
 
 The one liner compilation command could be
 
@@ -35,6 +37,11 @@ cd gtkmm-hello
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ../
+```
+
+A bunch of Makefiles will be created by cmake. Now run make
+
+```bash
 make
 ./scr/gtkmm-hello
 ```
