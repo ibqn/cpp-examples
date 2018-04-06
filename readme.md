@@ -2,10 +2,10 @@
 
 ## waf build system
 
-    ```bash
-    cd waf-hello
-    ./waf configure build
-    ```
+```bash
+cd waf-hello
+./waf configure build
+```
 
 ## cmake build system
 
