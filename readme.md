@@ -9,12 +9,14 @@ cd waf-hello
 
 ## cmake build system
 
-    cd cmake-hello
-    mkdir build
-    cd build
-    cmake ..
-    make
-    ./hello
+```bash
+cd cmake-hello
+mkdir build
+cd build
+cmake ..
+make
+./hello
+```
 
 ## gtkmm example
 
@@ -24,15 +26,17 @@ On ubuntu install the required development dependencies
 
 The one liner compilation command could be
 
-    g++ gtkmm-hello.cpp -o gtkmm-hello `pkg-config gtkmm-3.0 --cflags --libs`
+```fish
+ibqn@pLs ~/d/c/g/src> g++ gtkmm-hello.cpp -o gtkmm-hello `pkg-config gtkmm-3.0 --cflags --libs`
+```
 
-    ```bash
-    cd gtkmm-hello
-    mkdir build
-    cd build
-    cmake -DCMAKE_BUILD_TYPE=Debug ../
-    make
-    ./scr/gtkmm-hello
-    ```
+```bash
+cd gtkmm-hello
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Debug ../
+make
+./scr/gtkmm-hello
+```
 
 Do the same at the build_release dir but with `-DCMAKE_BUILD_TYPE=Release`
