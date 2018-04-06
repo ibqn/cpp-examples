@@ -26,8 +26,8 @@ On ubuntu install the required development dependencies
 
 The one liner compilation command could be
 
-```fish
-ibqn@pLs ~/d/c/g/src> g++ gtkmm-hello.cpp -o gtkmm-hello `pkg-config gtkmm-3.0 --cflags --libs`
+```console
+ibqn@pLs> g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
 ```
 
 ```bash
