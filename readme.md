@@ -9,6 +9,12 @@ cd waf-hello
 
 ## cmake build system
 
+On ubuntu install the required development dependencies
+
+```bash
+    sudo apt install cmake
+```
+
 ```bash
 cd cmake-hello
 mkdir build
