@@ -1,7 +1,11 @@
 # Minimum CMake version required to generate our build system
 cmake_minimum_required(VERSION 3.0)
 
-project(example)
+project(GTKmmExample)
+
+# Use verbose make files
+# This option can additionally be controlled by -DCMAKE_VERBOSE_MAKEFILE=ON
+set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # Use the package PkgConfig to detect GTK+ headers/library files
 find_package(PkgConfig REQUIRED)
