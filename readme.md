@@ -68,7 +68,7 @@ pacman -S mingw-w64-x86_64-pkg-config
 The one liner compilation command could be
 
 
-ibqn@pLs> g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
+$ g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
 ```
 
 ```bash
@@ -139,4 +139,5 @@ $ ldd ./src/gtkmm-hello.exe | grep  '/mingw64/'
 Useful links:
 
 [GTKmm on MSWindows](https://wiki.gnome.org/Projects/gtkmm/MSWindows)
-[GTKmm usung CMake](https://wiki.gnome.org/Projects/gtkmm/UsingCMake)
+
+[GTKmm using CMake](https://wiki.gnome.org/Projects/gtkmm/UsingCMake)
