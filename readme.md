@@ -15,13 +15,39 @@ On ubuntu install the required development dependencies
     sudo apt install cmake
 ```
 
+On Windows 10 we set everything up with MSYS2.
+To install the one targeting x86_64:
+
+```bash
+pacman -S mingw-w64-x86_64-gcc
+```
+
+Install `make` and `cmake`
+
+```bash
+pacman -S make
+pacman -S cmake
+```
+
+To build the project in the `build` directory do the following
+
 ```bash
 cd cmake-hello
 mkdir build
 cd build
+```
+
+On GNU/Linux systems we run `cmake ../` followed by `make`
+
+```bash
 cmake ..
 make
 ./hello
+```
+
+```bash
+cmake -G"MSYS Makefiles" ..
+make VERBOSE=1
 ```
 
 ## gtkmm example
