@@ -8,6 +8,3 @@ project(MyProject)
 # add_executable creates an executable with
 # The given name.
 add_executable(hello hello-world.cpp)
-
-# Make sure the executable links to the wiringPi lib
-#target_link_libraries(MyEXE wiringPi)

@@ -141,3 +141,7 @@ Useful links:
 [GTKmm on MSWindows](https://wiki.gnome.org/Projects/gtkmm/MSWindows)
 
 [GTKmm using CMake](https://wiki.gnome.org/Projects/gtkmm/UsingCMake)
+
+[Development on Windows](https://github.com/orlp/dev-on-windows/wiki/Installing-GCC--&-MSYS2)
+
+[GTK+ for Windows](https://www.gtk.org/download/windows.php)
