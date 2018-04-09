@@ -27,6 +27,7 @@ Install `make` and `cmake`
 ```bash
 pacman -S mingw-w64-x86_64-make
 pacman -S mingw-w64-x86_64-cmake
+pacman -S make cmake
 ```
 
 To build the project in the `build` directory do the following
@@ -45,6 +46,9 @@ make
 ./hello
 ```
 
+The above commands were also working for me on Windows 10.
+Or alternatively
+
 ```bash
 cmake -G"MSYS Makefiles" ..
 make VERBOSE=1
@@ -55,7 +59,7 @@ make VERBOSE=1
 On ubuntu install the required development dependencies
 
 ```bash
-    sudo apt install libgtkmm-3.0-dev
+sudo apt install libgtkmm-3.0-dev
 ```
 
 On Windows 10 install additional dependencies for MSYS2
