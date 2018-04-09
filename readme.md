@@ -30,6 +30,12 @@ pacman -S mingw-w64-x86_64-cmake
 pacman -S make cmake
 ```
 
+Might not be needed, but th ability to debug things cannot be bad
+
+```bash
+pacman -S mingw-w64-x86_64-gdb # ability to debug is always useful
+```
+
 To build the project in the `build` directory do the following
 
 ```bash
@@ -70,7 +76,6 @@ pacman -S mingw-w64-x86_64-pkg-config
 ```
 
 The one liner compilation command could be
-
 
 $ g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
 ```
