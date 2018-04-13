@@ -75,10 +75,13 @@ pacman -S mingw-w64-x86_64-gtkmm3
 pacman -S mingw-w64-x86_64-pkg-config
 ```
 
-The one liner compilation command could be
+For a quick test, the one liner compilation command could be
 
-$ g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
+```console
+g++ gtkmm-hello.cpp -o gtkmm-hello $(pkg-config gtkmm-3.0 --cflags --libs)
 ```
+
+Build the project with the debug information included
 
 ```bash
 cd gtkmm-hello
@@ -94,11 +97,11 @@ make
 ./scr/gtkmm-hello
 ```
 
-Do the same at the build_release dir but with `-DCMAKE_BUILD_TYPE=Release`.
+Do the same in the `build_release` directory but with `-DCMAKE_BUILD_TYPE=Release`.
 
 Here, is the list of shared libraries on Windows 10:
 ```console
-$ ldd ./src/gtkmm-hello.exe | grep  '/mingw64/'
+ldd ./src/gtkmm-hello.exe | grep  '/mingw64/'
         libglibmm-2.4-1.dll => /mingw64/bin/libglibmm-2.4-1.dll (0x664c0000)
         libgtkmm-3.0-1.dll => /mingw64/bin/libgtkmm-3.0-1.dll (0x63e40000)
         libstdc++-6.dll => /mingw64/bin/libstdc++-6.dll (0x6fc40000)
