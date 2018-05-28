@@ -6,6 +6,8 @@
 #include <mutex>
 
 
+class ExampleWindow;
+
 class ExampleWorker
 {
 public:
